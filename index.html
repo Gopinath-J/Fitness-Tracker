@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fitness Tracker</h1>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#workouts">Workouts</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard" class="section">
+            <div class="container">
+                <h2>Dashboard</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Daily Progress</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                        <p>75% of daily goal</p>
+                    </div>
+                    <div class="card">
+                        <h3>Weekly Overview</h3>
+                        <canvas id="weeklyChart"></canvas>
+                    </div>
+                    <div class="card">
+                        <h3>Monthly Summary</h3>
+                        <canvas id="monthlyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="workouts" class="section">
+            <div class="container">
+                <h2>Workouts</h2>
+                <div class="workout-form">
+                    <input type="text" placeholder="Workout name">
+                    <input type="number" placeholder="Duration (minutes)">
+                    <button>Add Workout</button>
+                </div>
+                <ul class="workout-list">
+                    <li>Running - 30 minutes</li>
+                    <li>Yoga - 60 minutes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="nutrition" class="section">
+            <div class="container">
+                <h2>Nutrition</h2>
+                <div class="nutrition-form">
+                    <input type="text" placeholder="Food item">
+                    <input type="number" placeholder="Calories">
+                    <button>Add Food</button>
+                </div>
+                <ul class="nutrition-list">
+                    <li>Apple - 95 calories</li>
+                    <li>Banana - 105 calories</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <div class="container">
+                <h2>Profile</h2>
+                <div class="profile-info">
+                    <p>Name: John Doe</p>
+                    <p>Age: 30</p>
+                    <p>Weight: 70 kg</p>
+                    <p>Height: 175 cm</p>
+                </div>
+                <button>Edit Profile</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fitness Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
